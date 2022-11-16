@@ -1,0 +1,3 @@
+export const TODO_LIST_LOADED = 'TODO_LIST_LOADED';
+export const NEW_TODO_ADDED = 'NEW_TODO_ADDED';
+export const FILTER_CHANGED = 'FILTER_CHANGED';

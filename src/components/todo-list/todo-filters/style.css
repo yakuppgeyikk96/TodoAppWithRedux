@@ -1,0 +1,21 @@
+.todo-filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.todo-filters-container .filter {
+    border: 1px solid #333;
+    margin: 0 1rem;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.selected {
+    background-color: var(--tertiary-color);
+    color: #fff;
+}

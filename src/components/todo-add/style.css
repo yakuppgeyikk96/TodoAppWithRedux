@@ -1,0 +1,54 @@
+.todo-add {
+    box-shadow: var(--primary-shadow);
+    width: 50%;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.todo-add .form-group {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group .form-control {
+    margin-bottom: 1rem;
+    align-self: stretch;
+}
+
+.form-control input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    height: 3rem;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+}
+
+.form-control input:focus {
+    border: 2px solid var(--tertiary-color);
+}
+
+.form-control input::placeholder {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.form-group .form-btn {
+    background-color: var(--tertiary-color);
+    color: #fff;
+    width: max-content;
+    padding: 0.5rem 3rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    user-select: none;
+    box-shadow: var(--primary-shadow);
+}
+
+.form-group .form-btn:active {
+    box-shadow: none;
+}

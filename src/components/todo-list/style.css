@@ -1,0 +1,19 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: fit-content;
+  width: 50%;
+  max-height: 25rem;
+  box-shadow: var(--primary-shadow);
+}
+
+.todo-list {
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: scroll;
+  margin-bottom: 2rem;
+  flex: 1;
+}

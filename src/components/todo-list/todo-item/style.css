@@ -1,0 +1,63 @@
+
+.todo-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+}
+
+.todo-item input {
+    margin-inline: 2rem;
+    appearance: none;
+    cursor: pointer;
+    font: inherit;
+    color: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.todo-item input::before {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-image: url('../../../assets/icons/done.png');
+    background-position: center;
+    background-size: contain;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 100ms;
+}
+
+.todo-item input:checked::before {
+    transform: scale(1);
+}
+
+.todo-item .todo-item-info {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.todo-item-info p:first-child {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+.todo-item-info p:last-child {
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+    text-decoration-color: var(--tertiary-color);
+}
