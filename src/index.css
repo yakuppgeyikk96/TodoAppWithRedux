@@ -1,7 +1,8 @@
 :root {
   --primary-color: #777;
-  --secondary-color: #284b63;
+  --secondary-color: #bc728b;
   --tertiary-color: #3c6e71;
+
 
   --border-radius: 5px;
   --primary-shadow: var(--primary-color) 0px 0px 5px 0px, var(--primary-color) 0px 0px 1px 0px;

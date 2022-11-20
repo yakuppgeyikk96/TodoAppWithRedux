@@ -1,12 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-import { FILTER_CHANGED } from "../../../constants/actionTypes";
-import "./style.css";
+import { FILTER_CHANGED } from "../../../../constants/actionTypes";
+import './style.css';
 
 const TodoFilters = ({ activeFilter, changeFilter }) => {
   return (
     <div className="todo-filters-container">
-      <div className={`filter all ${activeFilter === "ALL" ? "selected" : ""}`}
+      <div
+        className={`filter all ${activeFilter === "ALL" ? "selected" : ""}`}
         onClick={() => changeFilter("ALL")}
       >
         All

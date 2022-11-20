@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import TodoItem from "./todo-item";
-import TodoFilters from "./todo-filters";
 import "./style.css";
 import { TODO_LIST_LOADED } from "../../constants/actionTypes";
+import TodoFooter from "./todo-footer";
 
 const TodoList = ({ todoList, getTodos, activeFilter }) => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const TodoList = ({ todoList, getTodos, activeFilter }) => {
           return <TodoItem key={todo.id} {...todo} />;
         })}
       </ul>
-      <TodoFilters />
+      <TodoFooter />
     </div>
   );
 };
